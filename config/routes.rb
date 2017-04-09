@@ -11,6 +11,9 @@ Rails.application.routes.draw do
         resources :header2s
         resources :header3s
         resources :link_urls
+
+        # get 'new/:url', to: 'new'
+        post '/:new_url' => 'welcome#create'
       end
     end
   end
