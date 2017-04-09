@@ -11,12 +11,11 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :index %>
-    <%= f.text_field :index %>
+  <div class="form-group">
+    <%= f.text_field :index ,  class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit  "Submit" , class: "btn btn-default" %>
   </div>
 <% end %>
